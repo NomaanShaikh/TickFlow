@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>TickFlow</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div id="app">
+
+    <div id="ticker-bar">
+      <div id="ticker-text" contenteditable="false">
+        TickFlow started 🚀
+      </div>
+    </div>
+
+    <div id="settings-panel">
+      <div class="group">
+        <label>Speed</label>
+        <input type="range" id="speed-slider" min="40" max="600" step="10">
+      </div>
+
+      <div class="group">
+        <label>Font Size</label>
+        <input type="range" id="font-size-slider" min="16" max="90" step="2">
+      </div>
+
+      <div class="group">
+        <label>Font</label>
+        <select id="font-family">
+          <option>Impact</option>
+          <option>Arial</option>
+          <option>Segoe UI</option>
+          <option>Verdana</option>
+        </select>
+      </div>
+
+      <div class="group">
+        <label>Selection Color</label>
+        <input type="color" id="color-picker">
+      </div>
+    </div>
+
+  </div>
+
+  <script src="./renderer.js"></script>
+</body>
+</html>
